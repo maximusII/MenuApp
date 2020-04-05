@@ -1,0 +1,145 @@
+.recipe {
+  position: relative;
+  width: 70%;
+  min-height: 200px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 0px solid red;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  background-image: url(https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+}
+
+.bgFrame {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.recipe__description,
+.recipe__name {
+  position: relative;
+  word-wrap: break-word;
+  text-align: center;
+  z-index: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre-wrap;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+.recipe__description__single,
+.recipe__name__single {
+  position: relative;
+  word-wrap: break-word;
+  text-align: center;
+  z-index: 1;
+  margin-bottom: 20%;
+  padding: 10px;
+  white-space: pre-wrap;
+}
+
+.recipe__description__prevVers {
+  position: relative;
+  word-wrap: break-word;
+  text-align: center;
+  z-index: 1;
+  padding: 10px;
+  white-space: pre-wrap;
+}
+
+.recipe__description:hover {
+  cursor: pointer;
+  color: #00f;
+}
+
+.recipe__name,
+.recipe__name__single {
+  margin: 0;
+}
+
+.recipe__date {
+  text-align: left;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 1;
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.prevBtn,
+.editBtn,
+.delBtn {
+  text-align: center;
+  font-size: 16px;
+  margin: 0 auto;
+  width: 50px;
+  height: 25px;
+  background: #b3ca34;
+  border: 1px solid #b3ca34;
+  color: #fff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.backButton {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 auto;
+  width: 30%;
+  height: 50px;
+  background: #b3ca34;
+  border: 1px solid #b3ca34;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.5s;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.backButton:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.versions__title {
+  margin-bottom: -20px;
+}
+
+@media (min-width: 768px) {
+  .recipe {
+    width: 45vw;
+    margin: 20px 6px 20px 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .recipe {
+    width: 30vw;
+    margin: 20px 6px 20px 12px;
+  }
+}

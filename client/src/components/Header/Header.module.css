@@ -1,0 +1,25 @@
+.header {
+  height: 20vw;
+  background-color: #b3ca34;
+}
+
+.header__logo img {
+  height: 20vw;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.keyImage {
+  position: relative;
+  top: 40%;
+}
+
+.keyImage img {
+  width: 25%;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #fff;
+}

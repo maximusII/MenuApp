@@ -1,0 +1,14 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .list {
+    display: flex;
+    justify-content: space-between;
+    /* width: 100vw; */
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+}

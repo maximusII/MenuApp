@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 auto;
+  width: 30%;
+  height: 50px;
+  background: #b3ca34;
+  border: 1px solid #b3ca34;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.5s;
+  position: relative;
+  margin-top: 18%;
+}
+
+.button:hover {
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+}
