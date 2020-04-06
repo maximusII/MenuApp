@@ -10,6 +10,7 @@ Then, navigate to the client directory and run the following command:
 npm install
 
 Running the application
+
 To run this application, you must have MongoDB up and running
 
 To run the application, use the following command:
