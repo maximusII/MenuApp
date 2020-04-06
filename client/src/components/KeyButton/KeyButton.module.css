@@ -21,3 +21,16 @@
   font-weight: bold;
   color: #000;
 }
+
+@media (min-width: 768px) {
+  .button {
+    margin-top: 11%;
+    width: 18%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .button {
+    width: 200px;
+  }
+}

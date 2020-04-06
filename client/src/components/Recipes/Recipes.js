@@ -12,8 +12,8 @@ function Recipes({
   setRecipes
 }) {
   return (
-    <>
-      <ul className={styles.list}>
+    <div className={styles.recipes__container}>
+      <ul className={singleRecipePage ? styles.list__single : styles.list}>
         {recipes && recipes.length > 0 ? (
           recipes
             .sort((a, b) => new Date(b.date) - new Date(a.date))
@@ -33,7 +33,7 @@ function Recipes({
           <p>No recipes found</p>
         )}
       </ul>
-    </>
+    </div>
   );
 }
 

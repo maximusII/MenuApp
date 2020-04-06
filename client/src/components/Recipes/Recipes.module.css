@@ -1,14 +1,31 @@
-.list {
+.recipes__container {
+  margin: 0 auto;
+}
+
+.list,
+.list__single {
   list-style-type: none;
   padding: 0;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .list {
     display: flex;
-    justify-content: space-between;
-    /* width: 100vw; */
+    justify-content: left;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .recipes__container {
+    width: 1200px;
+  }
+  .list {
     padding: 10px;
+  }
+  .list__single {
+    display: flex;
+    justify-content: center;
   }
 }

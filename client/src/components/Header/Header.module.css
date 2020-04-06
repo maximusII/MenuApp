@@ -23,3 +23,17 @@
   padding: 5px;
   background-color: #fff;
 }
+
+@media (min-width: 768px) {
+  .header {
+    height: 10vw;
+  }
+
+  .header__logo img {
+    height: 10vw;
+  }
+
+  .keyImage img {
+    width: 15%;
+  }
+}

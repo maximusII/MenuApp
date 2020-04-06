@@ -1,4 +1,6 @@
-.recipe {
+.recipe,
+.recipe__single,
+.recipe__prev {
   position: relative;
   width: 70%;
   min-height: 200px;
@@ -97,7 +99,7 @@
   cursor: pointer;
 }
 
-.backButton {
+.button__back {
   display: block;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -115,7 +117,7 @@
   margin-bottom: 20px;
 }
 
-.backButton:hover {
+.button__back:hover {
   cursor: pointer;
   font-weight: bold;
   color: #000;
@@ -133,13 +135,33 @@
 @media (min-width: 768px) {
   .recipe {
     width: 45vw;
-    margin: 20px 6px 20px 12px;
+    margin: 20px auto;
+  }
+
+  .button__back {
+    width: 18%;
   }
 }
 
 @media (min-width: 1200px) {
   .recipe {
-    width: 30vw;
-    margin: 20px 6px 20px 12px;
+    width: 23%;
+    margin: 20px auto;
+  }
+
+  .recipe__single {
+    width: 50vw;
+  }
+
+  .button__back {
+    width: 200px;
+  }
+
+  .container__prev {
+    margin: 0 auto;
+  }
+
+  .recipe__prev {
+    width: 60vw;
   }
 }

@@ -58,10 +58,10 @@ function Recipe({
   }
 
   return (
-    <div>
+    <>
       {prevVers && singleRecipePage ? (
-        <div>
-          <button className={styles.backButton} onClick={backToLatestVer}>
+        <div className={styles.container__prev}>
+          <button className={styles.button__back} onClick={backToLatestVer}>
             To latest version
           </button>
           <h2 className={styles.versions__title}>
@@ -73,7 +73,7 @@ function Recipe({
               .map(recipe => (
                 <li
                   key={recipe._id + shortid.generate()}
-                  className={styles.recipe}
+                  className={styles.recipe__prev}
                 >
                   <div className={styles.bgFrame}></div>
                   <h2 className={styles.recipe__name__single}>{recipe.name}</h2>
@@ -88,7 +88,9 @@ function Recipe({
           </ul>
         </div>
       ) : (
-        <li className={styles.recipe}>
+        <li
+          className={singleRecipePage ? styles.recipe__single : styles.recipe}
+        >
           <div className={styles.bgFrame}></div>
           <h2
             className={
@@ -138,7 +140,7 @@ function Recipe({
           ) : null}
         </li>
       )}
-    </div>
+    </>
   );
 }
 
