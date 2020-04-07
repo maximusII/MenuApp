@@ -7,9 +7,11 @@ To run this project you need to add the backend and frontend dependencies. In th
 $ npm install
 
 
+
 Then, navigate to the client directory and run the following command:
 
 npm install
+
 
 
 Running the application
